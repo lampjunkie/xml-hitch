@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog version="1.0">
+	<meta>
+		<version>1.0</version>
+		<category>Electronics / Tablets</category>
+		<response_time>0.10</response_time>
+	</meta>
+	<products num="3" total="1000">
+		<product id="1" name="Apple iPad 2" price="569.95">
+			<description>
+				Apple iPad XX1LL/A Tablet (16GB, Wifi, Black) NEWEST MODEL
+			</description>
+			<rating type="thumbs">7</rating>
+			<rating type="stars">5</rating>
+		</product>
+		<product id="2" name="MOTOROLA XOOM Android Tablet (Wi-Fi)" price="599.00">
+			<description>
+				Redefining the tablet by providing more ways to have fun, connect with 
+				friends and stay productive on the go, the Motorola XOOM boasts a dual 
+				core processor with each core running at 1 GHz, 10.1-inch widescreen HD 
+				display, and ultra-fast Wireless-N Wi-Fi networking. Winner of the Best 
+				of Show award at the 2011 Consumer Electronics Show (CES), the XOOM also 
+				offers support for Adobe Flash Player--enabling you to view the web without 
+				compromise.
+			</description>
+			<comments />
+		</product>
+		<product id="3" name="Samsung Galaxy Tab (Wi-Fi)" price="349.99">
+			<description>
+				Enjoy a rich, brilliant viewing experience wherever you roam with the 
+				Android-powered Samsung Galaxy Tab mobile tablet--a powerful, entertainment 
+				device ideal for home or on the go. Weighing just 1 pound, it features a 
+				vibrant 7-inch touchscreen display with 3D-like graphics, speedy 1 GHz processor,
+				 and the Android 2.2 operating system--all in a sleek and compact form factor.
+			</description>
+			<comments>
+				<comment user="bob">This rocks!!!</comment>
+				<comment user="jane">I love it!!!</comment>
+			</comments>
+		</product>
+	</products>
+</catalog>
