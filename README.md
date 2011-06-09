@@ -247,6 +247,8 @@ Example XML:
           </products>
         </catalog>
 
+Example Annotations:
+
         /**
          * @xml:XmlObject
          */
@@ -267,7 +269,9 @@ To get startet, instantiate a HitchManager object and inject some required objec
 
         // create our new HitchManager
         $hitch = new HitchManager();  
-        $hitch->setClassMetaDataFactory(new ClassMetadataFactory(new AnnotationLoader(new AnnotationReader()), new ArrayCache()));
+        $hitch->setClassMetaDataFactory(new ClassMetadataFactory(
+                                            new AnnotationLoader(new AnnotationReader()), 
+                                            new ArrayCache()));
 
 Now you can unmarshall an XML string into an object graph in one simple call:
 
@@ -294,8 +298,10 @@ Example:
 
         // create our new HitchManager
         $hitch = new HitchManager();  
-        $hitch->setClassMetaDataFactory(new ClassMetadataFactory(new AnnotationLoader(new AnnotationReader()), new XcacheCache()));
-
+        $hitch->setClassMetaDataFactory(new ClassMetadataFactory(
+                                            new AnnotationLoader(new AnnotationReader()), 
+                                            new XcacheCache()));
+                                            
         // pre-build the class meta data cache
         $hitch->registerRootClass('My\Namespace\Catalog');
         $hitch->registerRootClass('My\Namespace\SomeOtherClass');
