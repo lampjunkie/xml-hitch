@@ -12,7 +12,7 @@
 namespace Hitch\Demo\Entity;
 
 /**
- * @xml:XmlElement
+ * @xml:XmlObject
  */
 class Rating
 {

@@ -14,7 +14,7 @@ namespace Hitch\Demo\Entity;
 use Hitch\Demo\Entity\Meta;
 
 /**
- * @xml:XmlElement
+ * @xml:XmlObject
  *
  */
 class Catalog

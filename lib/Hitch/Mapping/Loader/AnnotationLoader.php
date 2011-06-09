@@ -16,6 +16,7 @@ use Doctrine\Common\Annotations\AnnotationReader;
 use Hitch\Mapping\Annotation\XmlAttribute;
 use Hitch\Mapping\Annotation\XmlElement;
 use Hitch\Mapping\Annotation\XmlList;
+use Hitch\Mapping\Annotation\XmlObject;
 use Hitch\Mapping\Annotation\XmlValue;
 use Hitch\Mapping\ClassMetadata;
 
@@ -54,7 +55,7 @@ class AnnotationLoader
     $className = $reflClass->getName();
 
     foreach ($this->reader->getClassAnnotations($reflClass) as $annotation) {
-      if ($annotation instanceof XmlElement) {
+      if ($annotation instanceof XmlObject) {
         $this->loadClassAttributes($metadata);
         $this->loadClassElements($metadata);
         $this->loadClassLists($metadata);

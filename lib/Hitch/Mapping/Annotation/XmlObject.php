@@ -14,12 +14,11 @@ namespace Hitch\Mapping\Annotation;
 use Doctrine\Common\Annotations\Annotation;
 
 /**
- * XmlElement maps a entity property to an XML node
+ * XmlObject maps a class to XML by letting Hitch know that the annotated
+ * class should be parsed for additional annotations
  * 
  * @author marc
  */
-class XmlElement extends Annotation
+class XmlObject extends Annotation
 {
-	public $name;
-	public $type;
 }
