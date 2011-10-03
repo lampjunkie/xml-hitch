@@ -145,11 +145,11 @@ class ClassMetadata
 	/**
 	 * Add an embedded ClassMetadata
 	 * 
-	 * @param string $property
 	 * @param string $nodeName
+	 * @param string $property
 	 * @param ClassMetadata $metadata
 	 */
-	public function addEmbed($property, $nodeName, ClassMetadata $metadata)
+	public function addEmbed($nodeName, $property, ClassMetadata $metadata)
 	{
 		$this->embeds[$nodeName] = array($property, $metadata);
 	}
